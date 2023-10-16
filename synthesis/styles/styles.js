@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     width: "100%",
     height: "20%",
   },
-  controller: {
+  axisController: {
     borderColor: chart.colorWindow,
     borderWidth: 5,
     borderRadius: 5,

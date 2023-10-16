@@ -1,16 +1,20 @@
 import { useState } from "react";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { View } from "react-native";
 import { styles } from "./styles/styles";
-import Controller from "./component/Controller";
+import { NotesDataProvider } from "./contexts/notesDataContext";
+import AxisController from "./component/AxisController";
 import ChannelBar from "./component/ChannelBar";
 
 export default function App() {
+  const [touches, setTouches] = useState([]);
   return (
     <View style={styles.app}>
       <StatusBar style="auto" />
-      <Controller />
-      <ChannelBar />
+      <NotesDataProvider>
+        <AxisController firstNote={"C"} tessiture={2} onControl={setTouches} />
+        <ChannelBar />
+      </NotesDataProvider>
     </View>
   );
 }

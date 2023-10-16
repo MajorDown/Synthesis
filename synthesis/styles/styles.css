@@ -1,6 +1,14 @@
 chart {
-    --color1: rgb(0, 17, 30);
-    --color2: rgb(0, 33, 48);
-    --color3: rgb(0, 54, 95);
-    --color4: yellow;
+    --color1: rgb(255, 0, 0);
+    --color2: rgb(255, 77, 0);
+    --color3: rgb(255, 170, 0);
+    --color4: rgb(238, 255, 0);
+    --color5: rgb(136, 255, 0);
+    --color6: rgb(0, 255, 119);
+    --color7: rgb(0, 255, 191);
+    --color8: rgb(0, 217, 255);
+    --color9: rgb(0, 76, 255);
+    --color10: rgb(140, 0, 255);
+    --color11: rgb(242, 0, 255);
+    --color12: rgb(255, 0, 128);
 }
